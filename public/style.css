@@ -1,0 +1,33 @@
+.chat-card {
+    border: 2px solid black;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(206, 255, 255);
+}
+
+.message{
+    background-color: rgb(11, 117, 217);
+    color: white;
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+}
+
+textarea{
+    font-size: 20px;
+}
+
+.createChat{
+     border: 2px solid black;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(206, 255, 255);
+}
+
+.edit-delete{
+    display: flex;
+    justify-content: space-around;
+}

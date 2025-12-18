@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit chat here</title>
+</head>
+
+<body>
+    <h1>Edit chats here..</h1>
+    <p>This message was sent by <b>
+            <%= chat.from%>
+        </b> to <b>
+            <%= chat.to%>
+        </b>.</p>
+    <form method="post" action="/chats/<%=chat._id %>?_method=PATCH"
+        onsubmit="return confirm('Are you sure you want to update this chat?')">
+        <textarea name="msg" cols="60" rows="6"><%=chat.msg %></textarea>
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
